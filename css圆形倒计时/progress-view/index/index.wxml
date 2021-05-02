@@ -1,0 +1,20 @@
+<view class="out">
+  <view class="shanxing {{((percent < 50 && percent != 0) || percent == 100) ? 'shanxing1' : 'shanxing2'}}">
+
+
+    <view wx:if="{{percent != 0 && percent != 100}}" class="sx1"></view>
+
+
+    <view wx:if="{{percent != 50 && percent != 0 && percent != 100}}" class="sx2"
+      style="transform: rotate({{percent < 50 ? ((360 * percent / 100) - 180):(360 * (percent - 100) / 100)}}deg);">
+      <!-- <view class="{{percent < 50 ? 'dot' : 'dot2'}}"></view> -->
+    </view>
+
+    <view class="sx_t"></view>
+  </view >
+
+  <view class="dot"
+    style="transform: rotate({{((360 * percent / 100) - 180)}}deg);">
+
+  </view>
+</view>

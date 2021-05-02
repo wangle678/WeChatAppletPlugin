@@ -1,0 +1,112 @@
+.out {
+    position: relative;
+}
+
+.shanxing {
+    width: 400rpx;
+    height: 400rpx;
+    margin: 10rpx auto;
+    
+    position: relative;
+    border-radius: 200rpx;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sx1,
+.sx2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400rpx;
+    height: 400rpx;
+    clip: rect(0rpx, 200rpx, 400rpx, 0rpx);
+}
+
+.sx1 {
+    z-index: 1;
+}
+
+.sx_t {
+    width: 360rpx;
+    height: 360rpx;
+    border-radius: 180rpx;
+    z-index: 3;
+    background: #fff;
+}
+
+.shanxing1 {
+    background: #4886ff;
+}
+
+.shanxing1 .sx1,
+.shanxing1 .sx2 {
+    background: #ccc;
+}
+
+/* .shanxing1 .sx2::before {
+    position: absolute;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 6;
+    content: '';
+    top: 360rpx;
+    left: 180rpx;
+    box-shadow: 0 0 20px #fff000;
+} */
+
+.shanxing2 {
+    background: #ccc;
+}
+
+.shanxing2 .sx1,
+.shanxing2 .sx2 {
+    background: #4886ff;
+    transform: rotate(180deg);
+}
+
+/* .shanxing2 .sx2::before {
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 4;
+    content: '';
+    top: 0rpx;
+    left: 180rpx;
+    box-shadow: 0 0 20px #fff000;
+} */
+
+.sx2 {
+    z-index: 2;
+}
+
+.dot {
+  position: relative;
+  width: 405rpx;
+  height: 405rpx;
+  margin: 0 auto;
+  top: -412rpx;
+  /* left: -10rpx; */
+  /* background: black;
+  opacity: 0.5; */
+  z-index: 10;  
+}
+
+.dot::before {
+    position: absolute;
+    width: 45rpx;
+    height: 45rpx;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 11;
+    content: '';
+    top: 371rpx;
+    left: 181rpx;
+    box-shadow: 0 0 20px #fff000;
+}
